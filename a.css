@@ -1,0 +1,359 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-size: cover;
+    background-position: auto;
+    background: #fff;
+    font-family: sans-serif;
+}
+.logo img{
+float: left;
+height: 50px;
+width: 80px;
+margin: 20px;
+height: auto;
+
+}
+.menu-bar{ 
+    
+    margin: auto;
+    background: rgba(248, 3, 187, 0.637);
+    text-align: center;
+    text-decoration-style: solid;
+    list-style-type: none;
+}
+.menu-bar ul{
+    display:inline-flex;
+    list-style: none;
+    color:black;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 10px;
+    padding: 0px;
+}
+.menu-bar ul li a{
+    text-decoration:none;
+    color:white;
+   
+}
+.Active, .menu-bar ul li:hover{
+   background-color: #eb32ad;
+
+       
+}
+.menu-bar .fa{
+    margin-right: 5px;
+}
+.sub-menu-1{
+    display: none;
+    text-align: center;
+    transition: 0.6s ease;
+
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(252, 157, 223);
+    margin-top: 20px;
+    margin-left: -10px;
+    transition: 0.6s ease;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    display: block;
+    background: transparent;
+    text-align: center;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: rgb(20, 20, 20);
+    
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+.box{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+  margin-top: 100px;
+  margin:50px;
+
+  color:black; 
+  height: 300px;
+  width: 300px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin: auto;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	font-weight: 400;
+	display: inline-block;
+	position: relative;
+}
+.customer-feedback .owl-item img {
+	width: 85px;
+	height: 85px;
+}
+
+.feedback-slider-item {
+	position: relative;
+	padding: 60px;
+	margin-top: -40px;
+}
+
+.customer-name {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.feedback-slider-item p {
+	line-height: 1.875;
+}
+
+
+/* GREY BACKGROUND COLOR OF THE ACTIVE SLIDER */
+.feedback-slider-item:after {
+	content: '';
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 0;
+	top: 103px;
+	background-color: #f6f6f6;
+	border: 1px solid rgba(251, 90, 13, .1);
+	border-radius: 10px;
+	z-index: -1;
+}
+
+
+
+.customer-feedback .owl-nav [class*="owl-"] {
+	position: relative;
+	display: inline-block;
+	bottom: 45px;
+	transition: all .2s ease-in;
+}
+
+.customer-feedback .owl-nav i {
+	background-color: transparent;
+	color: rgb(251, 90, 13);
+	font-size: 25px;
+}
+
+.customer-feedback .owl-prev {
+	left: -15px;
+}
+
+.customer-feedback .owl-prev:hover {
+	left: -20px;
+}
+
+.customer-feedback .owl-next {
+	right: -15px;
+}
+
+.customer-feedback .owl-next:hover {
+	right: -20px;
+}
+
+/* DOTS */
+.customer-feedback .owl-dots {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 35px;
+}
+.customer-feedback .owl-dot {
+	display: inline-block;
+}
+
+.customer-feedback .owl-dots .owl-dot span {
+	width: 11px;
+	height: 11px;
+	margin: 0 5px;
+	background: #fff;
+	border: 1px solid rgb(251, 90, 13);
+	display: block;
+	-webkit-backface-visibility: visible;
+	-webkit-transition: all 200ms ease;
+	transition: all 200ms ease;
+	border-radius: 50%;
+}
+
+.customer-feedback .owl-dots .owl-dot.active span {
+	background-color: rgb(251, 90, 13);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+	.feedback-slider-item:after {
+		left: 30px;
+		right: 30px;
+	}
+	.customer-feedback .owl-nav [class*="owl-"] {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-top: 45px;
+		bottom: auto;
+	}
+	.customer-feedback .owl-prev {
+		left: 0;
+	}
+	.customer-feedback .owl-next {
+		right: 0;
+	}
+	
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.footer-main-div{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    background: black;
+    padding: 3px 0px;
+}
+.footer-social-icons{
+    width: 100%;
+    height: 40%;
+    margin: auto;
+}
+.footer-social-icons ul{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px;
+    border-radius: 100%;
+    background: #e76430;
+}
+.footer-social-icons ul li a{
+    color:black;
+    
+    font-size: 20px;
+    display: block;
+}
+.footer-social-icons ul li a i{
+    line-height: 30px;
+}
+.footer-social-icons ul li:hover{
+    background:;
+}
+.footer-social-icons ul li a:hover {
+    color: #fff;
+}
+.footer-menu-one{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 5px;
+}
+.footer-menu-one ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.footer-menu-one ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.footer-menu-one ul li a{
+    font-family: arial;
+    font-size: 12px;
+    font-weight: 500;
+    
+    color: #e0642b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.footer-menu-one ul li a:hover{
+    color: white
+}
+.footer-menu-two{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 5px;
+}
+.footer-menu-two ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.footer-menu-two ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.footer-menu-two ul li a{
+    font-family: arial;
+    font-size: 12px;
+    font-weight: 500;
+    color: #e0642b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.footer-menu-two ul li a:hover{
+    color: white;
+}
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background:rgb(216, 87, 40)
+    padding: 8px;
+}
+.footer-bottom p{
+    font-family: arial;
+    font-size: 15px;
+    text-align: center;
+    color:black;
+    background: #584a41;
+  
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+.footer-bottom p a{
+    
+    color:rgb(219, 94, 48);
+}
+.footer-bottom p a:hover{
+    
+    color: #fff;
+}
+
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#30ff00);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
+}
